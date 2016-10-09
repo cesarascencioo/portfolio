@@ -1,0 +1,30 @@
+@font-face {
+    font-family: BlowBrush;
+    src: url(../fonts/blowbrush.otf);
+}
+
+/* TODO: find a better way to do this */
+body {
+    overflow-y: hidden;
+}
+.overlay {
+    position:absolute;
+    top:27%;
+    left:18%;
+    z-index:1;
+
+}
+
+.text-title {
+    font-family: BlowBrush;
+    font-size: 10em;
+    text-transform:uppercase;
+    background:url('../images/blackout.jpg');
+    background-repeat:repeat-x;
+    background-position:30% 90%;
+    color:transparent;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

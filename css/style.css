@@ -9,8 +9,8 @@ body {
 }
 .overlay {
     position:absolute;
-    top:27%;
-    left:18%;
+    top:60%;
+    left:2%;
     z-index:1;
 }
 
@@ -18,12 +18,30 @@ body {
     font-family: BlowBrush;
     font-size: 10em;
     text-transform:uppercase;
-    background:url('../images/blackout.jpg');
+    background:url('../images/gold2.jpg');
     background-repeat:repeat-x;
-    background-position:30% 90%;
+    background-position:50% 40%;
     color:transparent;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+.title-effect{
+white-space: nowrap;
+  overflow: hidden;
+  width: 15em;
+  animation: type 4s steps(60, end);
+}
+title:nth-child(2){
+  animation: type2 8s steps(60, end);
+}
+title2:nth-child(2){
+  animation: type2 8s steps(60, end);
+}
+@keyframes type{
+  from { width: 0; }
+}
+#title{
+    margin-bottom: -5%
 }

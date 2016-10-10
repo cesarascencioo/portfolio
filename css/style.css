@@ -13,7 +13,20 @@ body {
     left:2%;
     z-index:1;
 }
-
+.crown-overlay{
+    position:absolute;
+    top:56%;
+    left:28.5%;
+    z-index:1;
+}
+.navbar-design{
+    height:5em;
+    margin-left:33em;
+    letter-spacing: 3em;
+}
+.navbar-border{
+    border-right:solid 0.05em;
+}
 .text-title {
     font-family: BlowBrush;
     font-size: 10em;
@@ -45,3 +58,4 @@ title2:nth-child(2){
 #title{
     margin-bottom: -5%
 }
+

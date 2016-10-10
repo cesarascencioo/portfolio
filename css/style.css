@@ -9,16 +9,40 @@ body {
 }
 .overlay {
     position:absolute;
-    top:60%;
-    left:2%;
+    top:25%;
+    left:35%;
     z-index:1;
 }
 .crown-overlay{
     position:absolute;
-    top:56%;
-    left:28.5%;
+    top:21%;
+    left:61%;
     z-index:1;
 }
+.button-overlay{
+    position:absolute;
+    top:70%;
+    left:40%;
+    z-index:1;
+    height:3em;
+    width:15em;
+    font-size:1.2em;
+    font-family:sans-serif;
+    background-color:transparent;
+    font-weight:bold;
+}
+.compass{
+    margin-left:-3em;
+    margin-top:-0.4em;
+    position:fixed;
+    color:#800020;
+    }
+.btn-text{
+    margin-left:-3.5em;
+    margin-top:-0.5em;
+    position:fixed;
+    color:#800020;
+    }
 .navbar-design{
     height:5em;
     margin-left:33em;
@@ -33,18 +57,19 @@ body {
     text-transform:uppercase;
     background:url('../images/gold2.jpg');
     background-repeat:repeat-x;
-    background-position:50% 40%;
+    background-position:30% 40%;
     color:transparent;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+/*
 .title-effect{
 white-space: nowrap;
   overflow: hidden;
   width: 15em;
-  animation: type 4s steps(60, end);
+  animation: type8s steps(60, end);
 }
 title:nth-child(2){
   animation: type2 8s steps(60, end);
@@ -55,7 +80,50 @@ title2:nth-child(2){
 @keyframes type{
   from { width: 0; }
 }
+*/
 #title{
-    margin-bottom: -5%
+    margin-bottom:-5%;
+}
+#title2{
+    margin-top:-28%;
 }
 
+.area{
+  animation:blur .85s ease-in-out;
+}
+
+@keyframes blur{
+  from{
+      text-shadow:
+      0px 10px 100px #FFF5C3,
+      0px 10px 100px #FFF5C3,
+      0px -10px 100px  #FFF5C3,
+      0px -10px 100px #FFF5C3;}
+}
+.button{
+-webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+    outline:none;
+    }
+.button:after {
+    content: "";
+    background: ghostwhite;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+
+.button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}

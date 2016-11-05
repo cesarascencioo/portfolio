@@ -14,29 +14,28 @@
 
 </head>
 <body>
-  <div class="container-fluid">
+  <div class="container-fluid ">
    <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container-fluid">
             <ul class="nav navbar-nav navbar-design">
-                <li><a href="#"><i title="Home" class=" fa fa-diamond fa-3x navbar-border" aria-hidden="true"></i></a></li>
-                <li><a href="#"><i title="About" class=" fa fa-user fa-3x navbar-border" aria-hidden="true"></i></a></li>
-                <li><a href="#"><i title="Projects" class="fa fa-desktop fa-3x navbar-border" aria-hidden="true"></i></a></li>
-                <li><a href="#"><i title="Resume" class="fa fa-graduation-cap fa-3x navbar-border" aria-hidden="true"></i></a></li>
-                <li><a href="#"><i title="Contact" class="fa fa-phone fa-3x" aria-hidden="true"></i></a></li>
+                <li><a href="about.html"><div class="navbar-border"><i title="About" class=" fa fa-user fa-3x navbar-txt" aria-hidden="true"></i></div></a></li>
+                <li><a href="#"><div class="navbar-border"><i title="Projects" class="fa fa-desktop fa-3x navbar-txt" aria-hidden="true"></i></div></a></li>
+                <li><a href="#"><div class="navbar-border"><i title="Resume" class="fa fa-graduation-cap fa-3x navbar-txt" aria-hidden="true"></i></div></a></li>
+                <li><a href="#"><i title="Contact" class="fa fa-phone fa-3x navbar-txt" aria-hidden="true"></i></a></li>
             </ul>
         </div>
     </nav>
     <div>
-      <video class="bg-video videoa" width="102%" height="100%" autoplay="true" loop>
-        <source src="blackink.mp4" type="video/mp4">
+      <video id="background" class="fullscreen-bg" autoplay="true" loop>
+        <source class="fullscreen-bg__video" src="blackink.mp4" type="video/mp4">
       </video>
       <div class="overlay area">
         <p id="title" class="text-title title-effect">caesar</p>
         <p id="title2" class="text-title title-effect">design</p>
       </div>
     </div>
-    <div class="crown-overlay"><img src="crown.png" alt="golden crown"></div>
-     <button class=" button button-overlay"><i class="fa fa-compass fa-2x compass" aria-hidden="true"></i><span class="btn-text">START EXPLORING</span></button>
+    <div class="crown-overlay"><img id="crown" src="crown.png" alt="golden crown"></div>
+     <a href="about.html"><button class=" button button-overlay"><i class="fa fa-compass fa-2x compass" aria-hidden="true"></i><span class="btn-text">START EXPLORING</span></button></a>
     </div>
     <!--<div class="skull-overlay"><img src="skull.png" alt="golden crown"></div>-->
       <!-- JS scripts go here -->

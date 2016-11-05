@@ -2,10 +2,30 @@
     font-family: BlowBrush;
     src: url(../fonts/blowbrush.otf);
 }
-
+@font-face {
+    font-family:  Alisandra Demo;
+    src: url(../fonts/alisandrademo.ttf);
+}
 /* TODO: find a better way to do this */
-.videoa{
-    margin-left:-1em;
+body {
+    top: 20px;
+    left: 20px;
+    bottom: 20px;
+    right: 20px;
+    }
+
+#background {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background-size: cover;
 }
 /*
 body {
@@ -50,11 +70,12 @@ body {
     }
 .navbar-design{
     height:5em;
-    margin-left:28.5em;
+    margin-left:32.5em;
     letter-spacing: 3em;
 }
 .navbar-border{
-    border-right:solid 0.05em;
+    border-right:solid 0.2em;
+    color:ghostwhite;
 }
 .text-title {
     font-family: BlowBrush;
@@ -68,6 +89,18 @@ body {
     -moz-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+#title:hover{
+	-webkit-stroke-width: 0.1em;
+      -webkit-stroke-color: #FFF5C3;
+      -webkit-fill-color: #FFF5C3;
+      text-shadow: 0em 0em 0.35em #FFF5C3;
+}
+#title2:hover{
+	-webkit-stroke-width: 0.1em;
+      -webkit-stroke-color: #FFF5C3;
+      -webkit-fill-color: #FFF5C3;
+      text-shadow: 0em 0em 0.35em #FFF5C3;
 }
 /*
 .title-effect{
@@ -131,4 +164,58 @@ title2:nth-child(2){
     margin: 0;
     opacity: 1;
     transition: 0s
+}
+/*
+#borderimg{
+   border: 0.5em solid ;
+    border-image: url('../images/gold2.jpg');
+    padding:-2em;
+}
+*/
+/*end of home page */
+
+/* beginning about page */
+.navbar-design2{
+    height:5em;
+    margin-left:28.5em;
+    letter-spacing: 3em;
+}
+.navbar2-color{
+background-color:#4d0013 ;
+}
+.navbar-txt{
+color:ghostwhite;
+}
+.navbar-txt:hover{
+background:url('../images/gold2.jpg');
+    background-repeat:repeat-x;
+    background-position:30% 40%;
+    color:transparent;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.videoa2{
+    margin-left:-1.1em;
+    margin-top:-6em;
+}
+
+
+#background-about {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    z-index: -100;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.about-content{
+    height:600px;
+    background-color: red;
+    position:absolute;
+    top:800px;
 }
